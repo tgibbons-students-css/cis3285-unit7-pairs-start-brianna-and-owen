@@ -152,5 +152,17 @@ namespace ServicesUnitTest
             // Assert
             Assert.AreEqual(points, 2000 + 4 + 2000);
         }
+
+        [TestMethod]
+        public void FindNullAccount()
+        {
+            //Arrange
+            AccountService acctService = new AccountService();
+            //Act
+            string accountName = "Test4";
+            acctService.CreateAccount(accountName, AccountType.Platinum);
+
+            acctService.Deposit("Test5", 400M);
+        }
     }
 }

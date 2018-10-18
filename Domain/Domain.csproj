@@ -54,8 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountBase.cs" />
+    <Compile Include="AccountFactory.cs" />
     <Compile Include="AccountType.cs" />
+    <Compile Include="IAccount.cs" />
+    <Compile Include="NullAccount.cs" />
     <Compile Include="SilverAccount.cs" />
     <Compile Include="PlatinumAccount.cs" />
     <Compile Include="GoldAccount.cs" />
